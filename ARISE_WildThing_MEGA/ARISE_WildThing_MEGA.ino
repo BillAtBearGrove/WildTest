@@ -3,6 +3,7 @@
   ARISE - Syracuse, NY
   Main Contact: Connor McGough
   Coders: Bill Smith 2021/11/10
+  I Added This Comment Tuesday (in Main branch)
 */
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -207,7 +208,7 @@ void loop()
         motorLForward = true; // last direction is forward (motorLForward initialized as true)
         digitalWrite(dir1, HIGH);
         digitalWrite(dir1_opp, LOW);
-      }   
+      }
       if (motorLVel_Filt < 0) {
         motorLForward = false;  // last direction is reverse
         digitalWrite(dir1, LOW);
@@ -241,7 +242,7 @@ void loop()
         motorRForward = true; // last direction is forward (motorLForward initialized as true)
         digitalWrite(dir2, HIGH);
         digitalWrite(dir2_opp, LOW);
-      }   
+      }
       if (motorRVel_Filt < 0) {
         motorRForward = false;  // last direction is reverse
         digitalWrite(dir2, LOW);
@@ -330,7 +331,7 @@ void loop()
       Serial.print("Tether Y "); Serial.print("\t"); Serial.print(analogRead(joyY_Tether)); Serial.print("\t");
       //Serial.print("JoySwitch_Tether = "); Serial.print(digitalRead(JoySwitch_Tether)); Serial.print("\t");
       //Serial.print("JoySwitch_Onboard = "); Serial.print(digitalRead(JoySwitch_Onboard)); Serial.print("\t");
-      Serial.print("JoySwitch_Main = "); Serial.print(analogRead(JoySwitch_Main)); Serial.print("\t"); 
+      Serial.print("JoySwitch_Main = "); Serial.print(analogRead(JoySwitch_Main)); Serial.print("\t");
       Serial.print("PowerLevelPotInput = "); Serial.print(analogRead(PowerLevelPotInput)); Serial.print("\t");
       Serial.print("\n");
   }
