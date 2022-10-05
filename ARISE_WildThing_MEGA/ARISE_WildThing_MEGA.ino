@@ -3,6 +3,7 @@
   ARISE - Syracuse, NY
   Main Contact: Connor McGough
   Coders: Bill Smith 2021/11/10
+  This Is Niko's version
 */
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -166,7 +167,7 @@ void loop()
       y2 = mixTableR[i+1][1];
       if ( joyAngle<=x2 ) {
         if (x2==x1) {Rmix = y1;} else {  Rmix = y1 + (joyAngle - x1) * (y2 - y1) / (x2 - x1);}
-        //Serial.print("RIndex= "); Serial.print(i); Serial.print("  "); 
+        //Serial.print("RIndex= "); Serial.print(i); Serial.print("  ");
         break;
       }
     }
